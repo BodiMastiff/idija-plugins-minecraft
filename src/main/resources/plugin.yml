@@ -1,0 +1,6 @@
+name: MWCore
+version: '${project.version}'
+main: bodi.core
+api-version: 1.18
+authors: [ BodiMastiff, MCStrafe ]
+description: for mineworld. by code bodimastiff
