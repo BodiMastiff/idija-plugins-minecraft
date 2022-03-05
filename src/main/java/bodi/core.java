@@ -8,6 +8,8 @@ public final class core extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage("test");
+        Bukkit.getConsoleSender().sendMessage("test");
+        Bukkit.getConsoleSender().sendMessage("test");
 
     }
 
