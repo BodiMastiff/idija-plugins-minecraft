@@ -1,0 +1,24 @@
+
+Key: 7IEKi9T3N6n
+
+Spawn:
+  enable: true
+  teleportToSpawnJoin: true
+  Sound-enable: true
+  Sound: BLOCK_NOTE_BLOCK_BASS
+  Location:
+    world: "world"
+    x : 0
+    y: 100
+    z: 0
+    yaw: 0
+    pitch: 0
+  Messages:
+    reloadPlugin: "§fПлагин был §aперезагружен."
+    noPerm: "§cНет прав на команду."
+    noPermSet: "§cНет прав на установку спавна."
+    setSpawn: "§fCпавн был §aустановлен."
+    tpSpawn: "§fТы был §aтелепортирован §fна спавн."
+    consoleSend: "§cОшибка! Команда только для игрока."
+    notFoundPlayer: "§fИгрок не найден"
+    slaveTeleport: "§fТебя §aтелепортировали §fна спавн!"

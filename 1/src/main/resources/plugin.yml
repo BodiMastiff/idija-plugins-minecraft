@@ -1,0 +1,5 @@
+name: MWCore
+version: '1.1.2'
+main: ru.bodi.mineworld.core.main
+authors: [ BodiMastiff ]
+description: for mineworld. by bodimastiff
