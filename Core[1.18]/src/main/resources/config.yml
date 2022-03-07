@@ -30,3 +30,25 @@ settings:
   north_west: ''
   creative: '&b&lКреативе'
   permission: 'znear.use'
+
+
+Spawn:
+  teleportToSpawnJoin: true
+  Sound-enable: true
+  Sound: "ENTITY_ENDERMEN_TELEPORT"
+  Spawn:
+    world: "world"
+    x : 0
+    y: 100
+    z: 0
+    yaw: 0
+    pitch: 0
+  Messages:
+    reloadPlugin: "хехе, плагин был растартнут."
+    noPerm: "хехе, прав нет на команду."
+    noPermSet: "хехе, нет прав на установку спавна."
+    setSpawn: "хехе, спавн был установлен."
+    tpSpawn: "хехе, ты был телепортирован на спавн."
+    consoleSend: "Ошибка! Команда только для игрока."
+    notFoundPlayer: "Игрок не найден"
+    slaveTeleport: "Тебя телепортировали на спавн!"

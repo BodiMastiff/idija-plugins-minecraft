@@ -8,6 +8,7 @@ import org.bukkit.plugin.*;
 public class Main extends JavaPlugin
 {
     public static Economy econ;
+    public static Main instance;
     
     public void onEnable() {
         this.loadPlugin();
