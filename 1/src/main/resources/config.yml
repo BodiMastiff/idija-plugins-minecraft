@@ -1,5 +1,6 @@
 
 Key: 7IEKi9T3N6n
+prefix: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §f"
 
 Spawn:
   teleportToSpawnJoin: true
@@ -13,18 +14,29 @@ Spawn:
     yaw: 0
     pitch: 0
   Messages:
-    reloadPlugin: "§fПлагин был §aперезагружен."
-    noPerm: "§cНет прав на команду."
-    noPermSet: "§cНет прав на установку спавна."
-    setSpawn: "§fCпавн был §aустановлен."
-    tpSpawn: "§fТы был §aтелепортирован §fна спавн."
-    consoleSend: "§cОшибка! Команда только для игрока."
-    notFoundPlayer: "§fИгрок не найден"
-    slaveTeleport: "§fТебя §aтелепортировали §fна спавн!"
+    reloadPlugin: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fПлагин был §aперезагружен."
+    noPerm: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fНет прав на команду."
+    noPermSet: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fНет прав на установку спавна."
+    setSpawn: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fCпавн был §aустановлен."
+    tpSpawn: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fТы был §aтелепортирован §fна спавн."
+    consoleSend: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fОшибка! Команда только для игрока."
+    notFoundPlayer: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fИгрок не найден"
+    slaveTeleport: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fТебя §aтелепортировали §fна спавн!"
 
 Void:
   Messages:
-    reload: "хехе, плагин был растартнут."
+    reload: "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fПлагин был §aперезагружен."
   Command: "say лох добра"
   World: "world"
   Y: 10
+
+Core:
+  fly:
+    on: "полёт включён"
+    off: "полёт выключён"
+  help:
+    - "%prefix%&fДоступные команды:"
+    - "%prefix%&7  1. | &e/spawn &8set"
+    - "%prefix%&7  2. | &e/void"
+  noPerms:
+    - "§6§lＭＩＮＥ§e§lＷＯＲＬＤ§7: §fУ Вас §cнедостаточно§f прав, для этого действия."

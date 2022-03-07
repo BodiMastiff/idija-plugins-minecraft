@@ -2,6 +2,8 @@ package ru.bodi.mineworld.core.cmds;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import ru.bodi.mineworld.core.cfg;
+import ru.bodi.mineworld.core.main;
 
 public class core extends abst {
 
@@ -13,9 +15,9 @@ public class core extends abst {
     public void execute(CommandSender sender, String label, String[] args) {
         Player p = (Player) sender;
         if (sender.hasPermission("core.admin")) {
-            p.sendMessage("§aпроверка");
+            cfg.sendConfigMessage(p, "Core.help");
         } else {
-            p.sendMessage("§cн проверка");
+            cfg.sendConfigMessage(p, "Core.noPerms");
             return;
         }
         return;
