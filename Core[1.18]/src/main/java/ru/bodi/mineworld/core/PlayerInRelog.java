@@ -1,4 +1,4 @@
-package ru.bestrax.zencore;
+package ru.bodi.mineworld.core;
 
 import java.util.*;
 

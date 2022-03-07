@@ -1,4 +1,4 @@
-package ru.bestrax.zencore;
+package ru.bodi.mineworld.core;
 
 import org.bukkit.plugin.java.*;
 import net.milkbowl.vault.economy.*;
