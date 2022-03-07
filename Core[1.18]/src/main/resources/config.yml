@@ -30,8 +30,3 @@ settings:
   north_west: ''
   creative: '&b&lКреативе'
   permission: 'znear.use'
-  #AntiKick
-  commands-no-kick:
-    - '/ban %player% '
-    - '/kick %player% '
-    - '/tempban %player% '

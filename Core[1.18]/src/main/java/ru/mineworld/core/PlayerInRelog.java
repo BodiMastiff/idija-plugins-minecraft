@@ -1,4 +1,4 @@
-package ru.bodi.mineworld.core;
+package ru.mineworld.core;
 
 import java.util.*;
 

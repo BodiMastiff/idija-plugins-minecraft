@@ -1,4 +1,4 @@
-package ru.bodi.mineworld.core;
+package ru.mineworld.core;
 
 import org.bukkit.plugin.java.*;
 import net.milkbowl.vault.economy.*;

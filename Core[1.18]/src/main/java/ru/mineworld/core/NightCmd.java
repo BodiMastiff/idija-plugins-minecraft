@@ -1,27 +1,27 @@
-package ru.bodi.mineworld.core;
+package ru.mineworld.core;
 
 import org.bukkit.command.*;
 import org.bukkit.entity.*;
 import org.bukkit.*;
 
-public class DayCmd implements CommandExecutor
+public class NightCmd implements CommandExecutor
 {
     private Main plugin;
     
-    public DayCmd(final Main plugin) {
+    public NightCmd(final Main plugin) {
         this.plugin = plugin;
-        plugin.getCommand("day").setExecutor((CommandExecutor)this);
+        plugin.getCommand("night").setExecutor((CommandExecutor)this);
     }
     
-    public boolean onCommand(final CommandSender commandSender, final Command command, final String s, final String[] args) {
+    public boolean onCommand(final CommandSender commandSender, final Command command, final String s, final String[] strings) {
         if (!(commandSender instanceof Player)) {
             return false;
         }
         final Player p = (Player)commandSender;
-        if (p.hasPermission("zencore.day")) {
-            final int dayTick = 0;
-            p.getWorld().setTime(0L);
-            for (final String line : this.plugin.getConfig().getStringList("messages.dayChangedMessage")) {
+        if (p.hasPermission("zencore.night")) {
+            final int nightTick = 15000;
+            p.getWorld().setTime(15000L);
+            for (final String line : this.plugin.getConfig().getStringList("messages.nightChangedMessage")) {
                 Bukkit.broadcastMessage(this.parseColor(line.replace("%player%", p.getPlayer().getName())));
             }
             p.playSound(p.getLocation(), Sounds.VILLAGER_YES.bukkitSound(), 2.0f, 1.0f);

@@ -1,6 +1,6 @@
 name: Core
 version: '${project.version}'
-main: ru.bodi.mineworld.core.Main
+main: ru.mineworld.core.Main
 api-version: 1.18
 authors: [ MCStrafe, BodiMastiff ]
 description: WHAT
