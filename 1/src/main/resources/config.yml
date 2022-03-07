@@ -2,10 +2,9 @@
 Key: 7IEKi9T3N6n
 
 Spawn:
-  enable: true
   teleportToSpawnJoin: true
   Sound-enable: true
-  Sound: BLOCK_NOTE_BLOCK_BASS
+  Sound: BLOCK_NOTE_PLING
   Location:
     world: "world"
     x : 0
@@ -22,3 +21,10 @@ Spawn:
     consoleSend: "§cОшибка! Команда только для игрока."
     notFoundPlayer: "§fИгрок не найден"
     slaveTeleport: "§fТебя §aтелепортировали §fна спавн!"
+
+Void:
+  Messages:
+    reload: "хехе, плагин был растартнут."
+  Command: "say лох добра"
+  World: "world"
+  Y: 10

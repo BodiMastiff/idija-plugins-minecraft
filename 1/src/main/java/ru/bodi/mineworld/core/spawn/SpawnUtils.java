@@ -25,16 +25,16 @@ public class SpawnUtils
     }
 
     public static void teleportSpawn(final Player p) {
-        final World w = Bukkit.getWorld(main.getInstance().getConfig().getString("settings.Spawn.world"));
-        final double x = main.getInstance().getConfig().getDouble("Spawn.Location   .x");
+        final World w = Bukkit.getWorld(main.getInstance().getConfig().getString("Spawn.Location.world"));
+        final double x = main.getInstance().getConfig().getDouble("Spawn.Location.x");
         final double y = main.getInstance().getConfig().getDouble("Spawn.Location.y");
         final double z = main.getInstance().getConfig().getDouble("Spawn.Location.z");
         final double yaw = main.getInstance().getConfig().getDouble("Spawn.Location.yaw");
         final double pitch = main.getInstance().getConfig().getDouble("Spawn.Location.pitch");
         final Location loc = new Location(w, x, y, z, (float)yaw, (float)pitch);
         p.teleport(loc);
-        if (main.getInstance().getConfig().getBoolean("settings.Sound-enable")) {
-            final String sound = main.getInstance().getConfig().getString("settings.Sound");
+        if (main.getInstance().getConfig().getBoolean("Spawn.Sound-enable")) {
+            final String sound = main.getInstance().getConfig().getString("Spawn.Sound");
             w.playSound(p.getLocation(), Sound.valueOf(sound), 10.0f, 1.0f);
         }
     }

@@ -3,10 +3,9 @@ package ru.bodi.mineworld.core.spawn;
 import org.bukkit.command.*;
 import org.bukkit.entity.*;
 import ru.bodi.mineworld.core.cmds.abst;
-import ru.bodi.mineworld.core.main;
-import ru.bodi.mineworld.core.spawn.*;
 import ru.bodi.mineworld.*;
 import org.bukkit.*;
+import ru.bodi.mineworld.core.main;
 
 public class SpawnCMD extends abst
 {
@@ -34,17 +33,27 @@ public class SpawnCMD extends abst
         if (p.hasPermission("core.admin")) {
             final String lowerCase2;
             final String lowerCase = lowerCase2 = args[0].toLowerCase();
-            if ("set".equals(lowerCase2)) {
-                SpawnUtils.setSpawn(p);
-                SpawnUtils.sendMessage((CommandSender) p, "Spawn.Messages.setSpawn");
-            } else {
-                final Player p2 = Bukkit.getPlayerExact(args[0]);
-                if (p2 != null) {
-                    SpawnUtils.teleportSpawn(p2);
-                    SpawnUtils.sendMessage((CommandSender) p2, "Spawn.Messages.slaveTeleport");
-                    return;
+            switch (lowerCase2) {
+                case "set": {
+                    SpawnUtils.setSpawn(p);
+                    SpawnUtils.sendMessage((CommandSender)p, "Spawn.Messages.setSpawn");
+                    break;
                 }
-                SpawnUtils.sendMessage((CommandSender) p, "Spawn.Messages.notFoundPlayer");
+                case "reload": {
+                    main.getInstance().reloadConfig();
+                    SpawnUtils.sendMessage((CommandSender)p, "Spawn.Messages.reloadPlugin");
+                    break;
+                }
+                default: {
+                    final Player p2 = Bukkit.getPlayerExact(args[0]);
+                    if (p2 != null) {
+                        SpawnUtils.teleportSpawn(p2);
+                        SpawnUtils.sendMessage((CommandSender)p2, "Spawn.Messages.slaveTeleport");
+                        break;
+                    }
+                    SpawnUtils.sendMessage((CommandSender)p, "Spawn.Messages.notFoundPlayer");
+                    break;
+                }
             }
             return;
         }
