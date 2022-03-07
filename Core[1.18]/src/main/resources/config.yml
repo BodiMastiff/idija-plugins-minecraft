@@ -1,0 +1,37 @@
+messages:
+  #Crossbreeding
+  prefix: '§e§lMine§6§lWorld §8› §f' #ВАЖНО, этот префикс работает и для zSw
+  usage-potion: 'Вы успешно скрестили 2 зелья за 3000 монет!'
+  no-money-potion: 'У вас не хватает средств :('
+  #Near
+  result: '§e§lMine§6§lWorld §8› §fВсе найденные игроки &r&7(%count%)&6&l:'
+  near: '§e§lMine§6§lWorld §8› §f%player% &a%distance% %where% %gamemode%'
+  no-perms: '&fУ вас &c&nнедостаточно&f прав, купите привилегию &9&lПремиум&f на нашем сайте &a&nMcWorld.su'
+  no-players: '§e§lMine§6§lWorld §8› §fИгроков не найдено.'
+  #AntiKick
+  no-kick: '§e§lMine§6§lWorld §8› &fВы не можете выполнить это действие, т.к. игрок находится в кт.'
+  timeNoPerms: '&fУ вас &c&nнедостаточно&f прав, купите привилегию &5&lКреатив&f на нашем сайте &a&nMcWorld.su'
+  dayChangedMessage:
+    - '§e§lMine§6§lWorld §8› §fДонатер &7%player%&f поставил &e&lДе&b&lнь&f на сервере.'
+  nightChangedMessage:
+    - '§e§lMine§6§lWorld §8› §fДонатер &7%player%&f поставил &b&lНо&9&lчь&f на сервере.'
+
+settings:
+  #Crossbreeding
+  potion-cost: 3000
+  #Near
+  north: ''
+  north_east: ''
+  east: ''
+  south_east: ''
+  south: ''
+  south_west: ''
+  west: ''
+  north_west: ''
+  creative: '&b&lКреативе'
+  permission: 'znear.use'
+  #AntiKick
+  commands-no-kick:
+    - '/ban %player% '
+    - '/kick %player% '
+    - '/tempban %player% '
