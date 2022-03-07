@@ -1,0 +1,6 @@
+name: Core
+version: '${project.version}'
+main: ru.bodi.mcstrafe.mineworld.Core
+api-version: 1.18
+authors: [ MCStrafe, BodiMastiff ]
+description: WHAT
